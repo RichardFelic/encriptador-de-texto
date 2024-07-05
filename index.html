@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="container__logo">
+            <img src="img/Logo.png" alt="">
+        </div>
+
+        <div class="container__content">
+            
+            <!--Input Texto-->
+            <div class="container__content__input">
+                
+                <div class="container__textarea">
+                    <textarea type="text" id="inputTexto" placeholder="Ingresa el texto aqui"></textarea>
+                </div>
+
+                <div class="container__notice">
+                    <img src="img/bi_exclamation-circle-fill.png" alt="Logo de Advertencia"> 
+                    <p class="notice">Solo letras minúsculas y sin acentos</p>
+                </div>
+
+                <div class="container__btn">
+                    <button onclick="encriptar()">Encriptar</button>
+                    <button onclick="desencriptar()">Desencriptar</button>
+                </div>
+
+            </div>
+            <!--Input Texto-->
+            
+
+            <!--Print Texto-->
+            <div class="container__content__textarea">
+                <div class="custom-textarea">
+                    <img src="img/Muñeco.png" alt="Logo">
+                    <span>Ningún mensaje fue encontrado</span>
+                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+                <button id="copiar-btn" onclick="copiar()">Copiar</button>
+            </div>
+            <!--Print Texto-->
+
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
