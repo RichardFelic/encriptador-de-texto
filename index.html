@@ -7,19 +7,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-
+    <header>
         <div class="container__logo">
             <img src="img/Logo.png" alt="Logo de Alura Latam">
         </div>
+    </header>
 
+    <main class="container">
         <div class="container__content">
             
-            <!--Input Texto-->
+            <!-- Input de Texto -->
             <div class="container__content__input">
                 
                 <div class="container__textarea">
-                    <textarea type="text" id="inputTexto" placeholder="Ingresa el texto aqui"></textarea>
+                    <textarea id="inputTexto" placeholder="Ingresa el texto aquí"></textarea>
                 </div>
 
                 <div class="container__notice">
@@ -28,29 +29,27 @@
                 </div>
 
                 <div class="container__btn">
-                    <button onclick="encriptar()">Encriptar</button>
-                    <button onclick="desencriptar()">Desencriptar</button>
+                    <button type="button" onclick="encriptar()">Encriptar</button>
+                    <button type="button" onclick="desencriptar()">Desencriptar</button>
                 </div>
 
             </div>
-            <!--Input Texto-->
+            <!-- Fin Input de Texto -->
             
 
-            <!--Print Texto-->
+            <!-- Print de Texto -->
             <div class="container__content__textarea">
                 <div class="custom-textarea">
-                    <img src="img/Muñeco.png" alt="Logo de muneco">
+                    <img src="img/Muñeco.png" alt="Logo de muñeco">
                     <span>Ningún mensaje fue encontrado</span>
                     <p>Ingresa el texto que desees encriptar o desencriptar.</p>
                 </div>
-                <button id="copiarButton" onclick="copiar()" style="display: none;">Copiar</button>
-
+                <button id="copiarButton" type="button" onclick="copiar()" style="display: none;">Copiar</button>
             </div>
-            <!--Print Texto-->
+            <!-- Fin Print de Texto -->
 
         </div>
-
-    </div>
+    </main>
     <script src="index.js"></script>
 </body>
 </html>
