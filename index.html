@@ -7,49 +7,83 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="container__logo">
-            <img src="img/Logo.png" alt="Logo de Alura Latam">
-        </div>
-    </header>
+    <div class="content-wrapper">
+        <header>
+            <div class="container__logo">
+                <img src="img/Logo.png" alt="Logo de Alura Latam">
+            </div>
+        </header>
 
-    <main class="container">
-        <div class="container__content">
-            
-            <!-- Input de Texto -->
-            <div class="container__content__input">
+        <main class="container">
+            <div class="container__content">
                 
-                <div class="container__textarea">
-                    <textarea id="inputTexto" placeholder="Ingresa el texto aquí"></textarea>
-                </div>
+                <!-- Input de Texto -->
+                <div class="container__content__input">
+                    
+                    <div class="container__textarea">
+                        <textarea id="inputTexto" placeholder="Ingresa el texto aquí"></textarea>
+                    </div>
 
-                <div class="container__notice">
-                    <img src="img/bi_exclamation-circle-fill.png" alt="Logo de Advertencia"> 
-                    <p class="notice">Solo letras minúsculas y sin acentos</p>
-                </div>
+                    <div class="container__notice">
+                        <img src="img/bi_exclamation-circle-fill.png" alt="Logo de Advertencia"> 
+                        <p class="notice">Solo letras minúsculas y sin acentos</p>
+                    </div>
 
-                <div class="container__btn">
-                    <button type="button" onclick="encriptar()">Encriptar</button>
-                    <button type="button" onclick="desencriptar()">Desencriptar</button>
+                    <div class="container__btn">
+                        <button type="button" onclick="encriptar()">Encriptar</button>
+                        <button type="button" onclick="desencriptar()">Desencriptar</button>
+                    </div>
+
                 </div>
+                <!-- Fin Input de Texto -->
+                
+
+                <!-- Print de Texto -->
+                <div class="container__content__textarea">
+                    <div class="custom-textarea">
+                        <img src="img/Muñeco.png" alt="Logo de muñeco">
+                        <span>Ningún mensaje fue encontrado</span>
+                        <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                    </div>
+                    <button id="copiarButton" type="button" onclick="copiar()" style="display: none;">Copiar</button>
+                </div>
+                <!-- Fin Print de Texto -->
 
             </div>
-            <!-- Fin Input de Texto -->
-            
-
-            <!-- Print de Texto -->
-            <div class="container__content__textarea">
-                <div class="custom-textarea">
-                    <img src="img/Muñeco.png" alt="Logo de muñeco">
-                    <span>Ningún mensaje fue encontrado</span>
-                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__section about-me">
+                    <h4>About Me</h4>
+                    <p>Mi nombre es Richard Feliciano. Soy Ingeniero de Software, enfocado en el desarrollo backend y frontend. Especializado en la gestión de bases de datos, desarrollo web y en la creación de soluciones.</p>
+                    <p>La organización, responsabilidad, persistencia, creación de soluciones y la resolución de problemas son aptitudes que me definen como un buen profesional. Mi objetivo es seguir creciendo profesionalmente y contribuir al desarrollo de aplicaciones web de alto rendimiento.</p>
                 </div>
-                <button id="copiarButton" type="button" onclick="copiar()" style="display: none;">Copiar</button>
+                <div class="footer__section contact-info">
+                    <h4>Contact Info</h4>
+                    <div class="footer__social">
+                        <a href="https://github.com/RichardFelic" target="_blank" aria-label="GitHub">
+                            <img src="img/github-icon.png" alt="GitHub">
+                        </a>
+                        <a href="https://www.linkedin.com/in/richard-feliciano-abreu/" target="_blank" aria-label="LinkedIn">
+                            <img src="img/linkedin-icon.png" alt="LinkedIn">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__section contact-form">
+                    <h4>Contact Me</h4>
+                    <form action="mailto:felricharde42@gmail.com" method="post" enctype="text/plain">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
             </div>
-            <!-- Fin Print de Texto -->
-
-        </div>
-    </main>
+            <div class="footer__bottom">
+                <p>&copy; 2024 Richard E. Feliciano Abreu. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
     <script src="index.js"></script>
 </body>
 </html>
