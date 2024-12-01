@@ -3,6 +3,10 @@
 
 This project is a text encryptor and decryptor that transforms specific letters based on predefined rules.  
 
+# **Screenshot
+![image](https://github.com/user-attachments/assets/77907f3c-5110-472c-8bb5-7468b97edfa5)
+
+
 ## **Description**  
 
 The Alura Encryptor allows users to input text into a textarea and encrypt or decrypt it using specific vowel transformations. The result is displayed in another textarea and can be copied to the clipboard using a dedicated button.  
