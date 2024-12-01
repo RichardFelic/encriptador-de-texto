@@ -1,4 +1,6 @@
 # Encriptador Alura
+![Badge-Conversor](https://github.com/user-attachments/assets/fbd50812-1e32-4ac3-90af-037c9c342a7d)
+
 
 Este proyecto es un encriptador y desencriptador de texto que transforma letras específicas según reglas predefinidas.
 
