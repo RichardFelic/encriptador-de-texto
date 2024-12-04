@@ -3,7 +3,7 @@
 
 This project is a text encryptor and decryptor that transforms specific letters based on predefined rules.  
 
-# **Screenshot
+# **Screenshot**
 ![image](https://github.com/user-attachments/assets/77907f3c-5110-472c-8bb5-7468b97edfa5)
 
 
